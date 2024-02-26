@@ -1,0 +1,368 @@
+@startuml
+
+title __NEWWIMGYM's Class Diagram__\n
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.AddNewEx {
+        + Waiting_Time_Sec : EditText
+        + btnAccept : Button
+        + btnCancel : Button
+        + name : EditText
+        + notes : EditText
+        + reps : EditText
+        + sets : EditText
+        + weight : EditText
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.BMIcalc {
+        + BmiResultRange : TextView
+        + BmiReultText : TextView
+        + CalculateBmi : Button
+        + Height : EditText
+        + ResetValues : Button
+        + Weight : EditText
+        ~ CurrentHeightCM : double
+        ~ CurrentWeightKg : double
+        ~ bmi : double
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.BMRcalc {
+        + Age : EditText
+        + BmrReultText : TextView
+        + CalculateBmr : Button
+        + Height : EditText
+        + Rdfemale : RadioButton
+        + Rdmale : RadioButton
+        + ResetValues : Button
+        + Weight : EditText
+        ~ Bmr : double
+        ~ CurrentAge : double
+        ~ CurrentHeightCM : double
+        ~ CurrentWeightKg : double
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.BroadCastBattery {
+        + onReceive()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.Calculators {
+        ~ CalorieIntakebtncalc : Button
+        ~ bmi : Button
+        ~ bmr : Button
+        ~ calorie : Button
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.CalorieCalc {
+        ~ ActivityLevel : String[]
+        ~ BMR_Result : EditText
+        ~ CalculateCalories : Button
+        ~ CalorieCalcResult : TextView
+        ~ ResetValues : Button
+        ~ SelectedActivityLevel : String
+        + onClick()
+        + onCreateOptionsMenu()
+        + onItemSelected()
+        + onNothingSelected()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.CalorieIntake {
+        ~ AddCalories : Button
+        ~ AddCaloriesAmount : EditText
+        ~ CurrentCalorieIntake : TextView
+        ~ DecreaseCalories : Button
+        ~ ResetCurrentCalories : Button
+        ~ ciinfo : Button
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.DailyTraining {
+        ~ Itemposition : int
+        ~ firestore : FirebaseFirestore
+        ~ lv : ListView
+        ~ username : String
+        - AddNewEx : Button
+        - ExList : ArrayList<Exercise>
+        - exerciseAdapterView : AdapterView<Exercise>
+        - running : boolean
+        - seconds : int
+        - wasRunning : boolean
+        + ReadExListFromFireStore()
+        + getExList()
+        + onClick()
+        + onClickReset()
+        + onClickStart()
+        + onClickStop()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        + updateExerciseList()
+        # onActivityResult()
+        # onCreate()
+        # onPause()
+        # onResume()
+        - runTimer()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.EditActivity {
+        ~ Waiting_Time_Sec : EditText
+        ~ btnAccept : Button
+        ~ btnCancel : Button
+        ~ name : EditText
+        ~ notes : EditText
+        ~ reps : EditText
+        ~ sets : EditText
+        ~ weight : EditText
+        + onClick()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.ExAdapter {
+        ~ context : Context
+        ~ objects : List<Exercise>
+        + ExAdapter()
+        + getView()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.Exercise {
+        - Waiting_Time_Sec : int
+        - name : String
+        - notes : String
+        - reps : int
+        - sets : int
+        - weight : int
+        + Exercise()
+        + getCount()
+        + getItem()
+        + getItemId()
+        + getItemViewType()
+        + getName()
+        + getNotes()
+        + getReps()
+        + getSets()
+        + getView()
+        + getViewTypeCount()
+        + getWaiting_Time_Sec()
+        + getWeight()
+        + hasStableIds()
+        + isEmpty()
+        + registerDataSetObserver()
+        + setName()
+        + setNotes()
+        + setReps()
+        + setSets()
+        + setWaiting_Time_Sec()
+        + setWeight()
+        + unregisterDataSetObserver()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.LoginScreen {
+        ~ backButton : Button
+        ~ firebase : FirebaseFirestore
+        ~ login : Button
+        ~ password : EditText
+        ~ sp : SharedPreferences
+        ~ username : EditText
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.MainActivity {
+        - Login : Button
+        - SignUp : Button
+        - bug : Button
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+        - CreateNotificationChannel()
+        - SetNotification()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.MainScreen {
+        ~ CalculatorsBtn : Button
+        ~ CalorieIntakebtnmain : Button
+        ~ DailyTrainingBtn : Button
+        ~ RecommendedExercisesBtn : Button
+        ~ supbtn : Button
+        ~ username : String
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.PrivateStats {
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.RecomendedEX {
+        ~ MuscleType : Spinner
+        ~ MuscleTypeStr : String[]
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.ReminderBroadCast {
+        {static} - NOTIFICATION_ID : int
+        + onReceive()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.SignUpScreen {
+        ~ firestore : FirebaseFirestore
+        - backbtn : Button
+        - email : EditText
+        - password : EditText
+        - repassword : EditText
+        - signup : Button
+        - username : EditText
+        {static} + isvalidemalil()
+        + onClick()
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    class com.example.newwimgym.UserData {
+        - Mail : String
+        - age : int
+        - height : float
+        - name : String
+        - weight : float
+        + UserData()
+        + getAge()
+        + getHeight()
+        + getMail()
+        + getName()
+        + getUserTarget()
+        + getWeight()
+        + setAge()
+        + setHeight()
+        + setMail()
+        + setName()
+        + setUserTarget()
+        + setWeight()
+    }
+  }
+  
+
+  namespace com.example.newwimgym {
+    enum Target {
+      Mass
+      tonning
+    }
+  }
+  
+
+  com.example.newwimgym.AddNewEx -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.AddNewEx o-- com.example.newwimgym.Exercise : currentEx
+  com.example.newwimgym.AddNewEx o-- com.example.newwimgym.Exercise : ex
+  com.example.newwimgym.BMIcalc -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.BMRcalc -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.BroadCastBattery -up-|> android.content.BroadcastReceiver
+  com.example.newwimgym.Calculators -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.CalorieCalc .up.|> android.widget.AdapterView.OnItemSelectedListener
+  com.example.newwimgym.CalorieCalc -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.CalorieIntake -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.DailyTraining -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.DailyTraining o-- com.example.newwimgym.Exercise : lastSelected
+  com.example.newwimgym.DailyTraining o-- com.example.newwimgym.ExAdapter : exAdapter
+  com.example.newwimgym.EditActivity .up.|> android.view.View.OnClickListener
+  com.example.newwimgym.EditActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.EditActivity o-- com.example.newwimgym.Exercise : currentEx
+  com.example.newwimgym.EditActivity o-- com.example.newwimgym.Exercise : ex
+  com.example.newwimgym.ExAdapter -up-|> android.widget.ArrayAdapter
+  com.example.newwimgym.Exercise .up.|> android.widget.Adapter
+  com.example.newwimgym.Exercise .up.|> java.io.Serializable
+  com.example.newwimgym.LoginScreen -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.LoginScreen o-- com.example.newwimgym.UserData : userdata
+  com.example.newwimgym.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.MainScreen -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.PrivateStats -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.RecomendedEX -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.ReminderBroadCast -up-|> android.content.BroadcastReceiver
+  com.example.newwimgym.SignUpScreen -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.newwimgym.UserData o-- com.example.newwimgym.UserData.Target : userTarget
+  com.example.newwimgym.UserData +-down- com.example.newwimgym.UserData.Target
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

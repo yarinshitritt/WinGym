@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sidesidepic"
+    tools:context=".BMRcalc">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/newnblack"
+        android:text="Basal Metabolic Rate"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="right"
+        android:src="@drawable/maleimg" />
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-180dp"
+
+        android:src="@drawable/femaleimg" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:checked="false"
+            android:layout_marginLeft="34dp"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="false"
+            android:layout_marginLeft="97dp"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="Weight(in Kg)"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bmrWeight"
+        android:inputType="number"
+
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Height (in cm)"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bmrHeight"
+        android:inputType="number"
+
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textColor="@color/newnblack"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Age"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bmrAge"
+        android:inputType="number"
+
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bmrcalculate_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="7dp"
+        android:onClick="onClick"
+        android:background="@drawable/btnmain"
+        android:text="Calculate" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bmrReCalculate"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/bt_square"
+        android:text="Recalculate"
+        android:textSize="10dp" />
+
+
+    <TextView
+        android:id="@+id/bmrValueText"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:textColor="@color/newnblack"
+
+        android:layout_marginLeft="00dp"
+        android:layout_marginTop="30dp"
+        android:text="      "
+        android:textSize="20dp"
+        android:onClick="onClick"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sidesidepic"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/TitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Compare With Friends"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    <EditText
+        android:id="@+id/namesearch"
+        android:hint="Enter Name"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bt_square"
+        android:onClick="onClick"
+        android:text="search" />
+    </LinearLayout>
+
+    <ListView
+    android:id="@+id/FriendsListView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+</ListView>
+
+
+
+
+</LinearLayout>

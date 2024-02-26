@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen"
+    android:orientation="vertical"
+    android:background="@drawable/newuppic"
+    >
+
+    <Button
+        android:id="@+id/mainbackbtn"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/black"
+        android:color="@color/black" />
+
+    <Button
+        android:id="@+id/mainmenubtn"
+        android:layout_marginTop="-50dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_width="49dp"
+        android:layout_marginLeft="360dp"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center"
+        android:layout_marginTop="111dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/compareWithFriendsBtn"
+
+            android:layout_width="167dp"
+
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/testpic"
+            android:backgroundTint="@color/teal_700"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Compare \n with friends"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+
+            tools:ignore="OnClick" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/DailyTrainig"
+
+            android:layout_width="171dp"
+
+            android:layout_height="151dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/testpic2"
+            android:backgroundTint="@color/teal_700"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Daily \n trainig"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calorieIntakeBtn"
+
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_square"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Calorie\n Intake"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            tools:ignore="OnClick" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/calculatorsBtn"
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_square"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Calculators "
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/recommendedExercisesBtn"
+
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_square"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Exercises"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            tools:ignore="OnClick" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/AboutMeBtn"
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bt_square"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="About me"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            tools:ignore="OnClick" />
+
+
+
+
+
+</LinearLayout>
+</LinearLayout>

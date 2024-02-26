@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="94dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="96dp"
+                android:textColor="@color/brown"
+
+                android:layout_height="wrap_content"
+                android:text="Name  "
+                android:layout_marginLeft="0dp"
+                android:textSize="20dp" />
+
+
+            <TextView
+
+                android:id="@+id/Nametv"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="00dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+
+                android:text="Age  "
+                android:textColor="@color/brown"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/AgeTv"
+                android:layout_width="68dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:textColor="@color/black"
+
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="00dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+
+                android:text="Weight  "
+                android:textColor="@color/brown"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/weighTtv"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-7dp"
+                android:text=" "
+                android:textColor="@color/black"
+
+                android:textSize="20dp"
+
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="87dp"
+            android:layout_height="156dp"
+            android:layout_marginLeft="00dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:textColor="@color/brown"
+                android:layout_marginLeft="0dp"
+
+                android:layout_height="wrap_content"
+                android:text="Height  "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/HeightTv"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:text=" "
+                android:textColor="@color/black"
+
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

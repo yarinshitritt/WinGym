@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533945387824",
+    "project_id": "wingym-eaefe",
+    "storage_bucket": "wingym-eaefe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533945387824:android:d55c0dee096b4acc90d6f5",
+        "android_client_info": {
+          "package_name": "com.example.newwimgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533945387824-hld4can4onhd5h37n046ljiq2tm8asm1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpAL4hXiegXRlVOg4olVL_g3uNp0SPz7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533945387824-hld4can4onhd5h37n046ljiq2tm8asm1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

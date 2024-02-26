@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sidesidepic"
+    tools:context=".CalorieCalc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="Calorie Calculator"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/newnblack"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="BMR Result (calories)"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <EditText
+        android:id="@+id/CaloriecalcBmr"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Weekly activity Level"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <Spinner
+        android:id="@+id/Caloriecalcspinner"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+       />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CalorieCalcBbtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnmain"
+        android:onClick="onClick"
+        android:text="Calculate" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/newnblack"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/CalorieCalculateResult"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_square"
+        android:layout_gravity="center"
+        android:text="Reset Values"
+        android:onClick="onClick"
+        android:id="@+id/CalorieCalcResetValues"
+        />
+</LinearLayout>

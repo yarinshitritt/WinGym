@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/sidesidepic"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Recommended Exercises"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+
+        ></TextView>
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+        android:layout_marginTop="0dp"
+        android:text="Choose a muscle"
+        android:textSize="20sp"
+        ></TextView>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="18sp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <ScrollView
+        android:layout_below="@id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:textSize="30sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/newnblack"
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

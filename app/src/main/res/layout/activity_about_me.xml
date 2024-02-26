@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sidesidepic"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="About Me"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="16dp"
+        android:text="Gender"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/GenderSpinner"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/text1"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/GenderSpinner"
+        android:layout_marginLeft="16dp"
+        android:text="Age"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/age_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age_input"
+        android:layout_marginLeft="16dp"
+        android:text="Weight (Kg)"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Weight (Kg)"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight_input"
+        android:layout_marginLeft="16dp"
+        android:text="Height (Cm)"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/height_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Height (Cm)"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/height_input"
+        android:layout_marginLeft="16dp"
+        android:text="Goal Calories"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+
+        android:id="@+id/calorieinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Goal Calories"
+        android:inputType="numberDecimal" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SaveBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/visibility_switch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btnmain"
+
+        android:text="Save" />
+
+    <Switch
+        android:id="@+id/visibility_switch"
+        android:layout_width="wrap_content"
+        android:textColorHint="@color/black"
+        android:textColor="@color/newnblack"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calorieinput"
+        android:text="Make my information visible to others" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/newuppic"
+
+    >
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LoginBtn"
+        android:background="@drawable/btnmain"
+        android:onClick="onClick"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="286dp"
+        android:hint="Login!"
+        android:textSize="50dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SignUpBtn"
+        android:background="@drawable/btnmain"
+        android:onClick="onClick"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:hint="Sign Up"
+        android:textSize="50dp"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/guestbtn"
+        android:background="@drawable/bt_square"
+        android:onClick="onClick"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:hint="Guest"
+        android:textSize="50dp"
+
+
+        />
+
+
+
+
+
+</LinearLayout>

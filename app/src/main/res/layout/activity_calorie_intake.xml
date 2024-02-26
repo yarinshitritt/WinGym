@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sidesidepic"
+    tools:context=".CalorieIntake">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/newnblack"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text="Daily Calorie Intake"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/CalorieIntakeAdd"
+        android:hint="Change calories"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CalorieIntakePlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:background="@drawable/btnmain"
+        android:onClick="onClick"
+        android:text="+" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CalorieIntakeMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btnmain"
+        android:textSize="20dp"
+
+        android:onClick="onClick"
+        android:text="-" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/CurrentCalorireIntakeTv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text=" Calories"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/Total_Calories_To_Consume"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/black"
+        android:text="2000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:text=" calories to consume"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/CalorieIntakeResetValues"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bt_square"
+        android:onClick="onClick"
+        android:text="Reset Calorie Intake " />
+</LinearLayout>
